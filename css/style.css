@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: aqua;
+    height: 20vh;
+    position: fixed;
+    top: 0;
+}
+
+main {
+    background-color: green;
+    height: calc(100%-40vh);
+    margin-bottom: 20vh;
+    margin-top: 20vh;
+}
+
+footer {
+    background-color: aqua;
+    height: 20vh;
+    position: fixed;
+    bottom: 0;
+}
