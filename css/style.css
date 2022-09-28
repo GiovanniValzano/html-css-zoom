@@ -5,10 +5,29 @@ body {
 }
 
 header {
-    background-color: aqua;
-    height: 20vh;
+    display: flex;
+    justify-content: flex-end;
+    height: 5vh;
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+}
+
+header button {
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    height: 3vh;
+    margin-right: 5px;
+    transition: .2s;
+}
+
+header button:hover {
+    background-color: rgb(49, 49, 49);
+    cursor: pointer;
 }
 
 main {
@@ -19,8 +38,60 @@ main {
 }
 
 footer {
-    background-color: aqua;
-    height: 20vh;
+    background-color: rgb(35, 35, 35);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
     position: fixed;
     bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.expandbtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-left: 10px;
+}
+
+.icon .fa{
+    font-size: 30px;
+    display: block;
+    margin-bottom: -9px;
+}
+
+.icon p {
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+footer button {
+    color: white;
+    background-color: unset;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+footer button:hover {
+    cursor: pointer;
+    background-color: rgb(50, 50, 50);
+}
+
+.endbtn {
+    font-size: 15px;
+    margin-right: 20px;
+    transition: .2s;
+}
+
+.endbtn:hover {
+    color: rgb(244, 35, 35);
+}
+
+.shareicon {
+    color: green;
 }
