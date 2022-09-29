@@ -9,7 +9,6 @@ header {
     display: flex;
     justify-content: flex-end;
     height: 5vh;
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -33,10 +32,7 @@ header button:hover {
 }
 
 main {
-    height: calc(100%-15vh);
-    margin-bottom: 10vh;
-    margin-top: 5vh;
-    position: relative;
+    height: calc(100vh - 15vh);
 }
 
 footer {
@@ -45,7 +41,6 @@ footer {
     justify-content: space-between;
     align-items: center;
     height: 10vh;
-    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
@@ -107,6 +102,9 @@ footer button:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    position: relative;
+    overflow-y: auto;
+    height: calc(100vh - 15vh);
 }
 
 .cards {
